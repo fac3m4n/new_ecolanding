@@ -1,3 +1,5 @@
+const { fontFamily } = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -7,6 +9,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-ghibli)', ...fontFamily.sans]
+      },
       keyframes: {
         updown: {
           '0%': { transform: 'translateY(-5px)' },
@@ -16,7 +21,11 @@ module.exports = {
       },
       animation: {
         updown: 'updown 2s ease-in-out infinite',
+      },
+      scale: {
+        '-100': '-1',
       }
+
     },
   },
   plugins: [],
