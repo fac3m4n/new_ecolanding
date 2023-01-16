@@ -39,24 +39,24 @@ const Home: NextPage = () => {
 
         {/* Hero Text */}
         <div className="justify-center flex flex-col p-4">
-          <h1 className="text-[40px] text-[#1E5128] leading-none font-mono font-bold lg:text-[70px]">
+          <h1 className="text-[40px] text-[#247c1e] leading-none font-sans font-bold lg:text-[70px]">
             Go Green <br />
             while Gaming
           </h1>
-          <p className="text-[#1E5128] mt-4 text-lg leading-normal ">
+          <p className="text-[#247c1e] mt-4 text-lg leading-normal ">
             Reduce your impact on the environment by playing games!
           </p>
 
           <div className="flex justify-center space-x-4">
             <button
-              className="mt-6 bg-[#D8E9A8] text-[#1E5128] py-6 text-lg rounded-lg 
+              className="mt-6 bg-[#247c1e] text-white py-6 text-lg rounded-lg 
             w-1/2 font-bold"
             >
               JOIN WAITLIST
             </button>
             <button
-              className="mt-6 bg-transparent text-[#1E5128] py-6 text-lg rounded-lg 
-            w-1/2 font-bold border-2 border-[#D8E9A8] hover:bg-[#d8e9a869]"
+              className="mt-6 bg-transparent text-[#247c1e] py-6 text-lg rounded-lg 
+            w-1/2 font-bold border-2 border-[#247c1e] hover:bg-[#d8e9a869]"
             >
               ECO-PAPER
             </button>

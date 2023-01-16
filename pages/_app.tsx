@@ -1,30 +1,37 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
-import localFont from '@next/font/local'
+import "../styles/globals.css";
+import type { AppProps } from "next/app";
+import localFont from "@next/font/local";
+
+import { Poppins } from "@next/font/google";
 
 const ghibli = localFont({
   src: [
     {
-      path: './Ghibli.otf',
-      weight: '400',
-      style: 'normal',
+      path: "./Ghibli.otf",
+      weight: "400",
+      style: "normal",
     },
     {
-      path: './Ghibli-Bold.otf',
-      weight: '700',
-      style: 'normal',
+      path: "./Ghibli-Bold.otf",
+      weight: "700",
+      style: "normal",
     },
   ],
   variable: "--font-ghibli",
-  display: 'swap'
-})
+  display: "swap",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "700"],
+});
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <main className={`${ghibli.variable} font-sans`}>
+    <main className={`${poppins.className} font-sans`}>
       <Component {...pageProps} />
     </main>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;
