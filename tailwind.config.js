@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-ghibli)', ...fontFamily.sans]
+        mono: ['var(--font-ghibli)', ...fontFamily.mono]
       },
       keyframes: {
         updown: {

@@ -6,37 +6,44 @@ import hero from "../assets/images/hero.png";
 
 const Home: NextPage = () => {
   return (
-    <div className="w-full h-screen bg-[#f2eeeb]">
+    <div className="w-full h-screen bg-[url('/images/mood-bg1.png')] bg-cover bg-no-repeat">
       <Head>
         <title>Ecoland</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      {/* <div className="bg-[url('/images/clouds.png')] absolute w-full h-screen bg-no-repeat bg-cover">
-      </div> */}
 
-
-
-
-      <main className="flex w-full h-screen flex-1 flex-col items-center justify-center px-6 md:flex-row-reverse md:space-x-reverse md:space-x-64">
-        <div className="bg-[url('/images/solar.png')] absolute w-full h-screen -z-2 bg-no-repeat bg-cover transform -scale-x-100 md:transform-none">
-        </div>
+      <main className="flex w-full h-screen flex-1 flex-col items-center px-6 justify-center lg:flex-row-reverse lg:justify-around">
         {/* Hero Image */}
-        <img src="/images/hero.png" alt="hero" className="animate-updown md:w-[400px] lg:w-[600px]" />
-
-
+        <img
+          src="/images/hero.png"
+          alt="hero"
+          className="animate-updown w-[300px] sm:w-[400px] md:w-[450px] lg:w-[500px]"
+        />
 
         {/* Hero Text */}
-        <div className="p-6 justify-center mt-6 md:h-auto md:w-[900px] flex flex-col md:p-28 z-10 glassmorph">
-          <h1 className="text-[44px] text-[#2f3556] md:text-[80px] leading-none font-sans font-bold">
-            Go <span className="text-[#97b960]">Green</span> <br />
-            while <span className="text-[#97b960]">Gaming</span>
+        <div className="justify-center flex flex-col p-4">
+          <h1 className="text-[40px] text-[#1E5128] leading-none font-mono font-bold lg:text-[70px]">
+            Go Green <br />
+            while Gaming
           </h1>
-          <p className="text-[#596599] mt-4 text-lg md:text-[30px] leading-normal ">Reduce your impact on the environment by playing games!</p>
+          <p className="text-[#1E5128] mt-4 text-lg leading-normal ">
+            Reduce your impact on the environment by playing games!
+          </p>
 
-          <div className="flex justify-start ">
-            <button className="mt-6 bg-[#2ac6ea] text-[#2f4162] py-6 text-[20px] rounded-lg 
-            w-1/2">JOIN WAITLIST</button>
+          <div className="flex justify-center space-x-4">
+            <button
+              className="mt-6 bg-[#D8E9A8] text-[#1E5128] py-6 text-lg rounded-lg 
+            w-1/2 font-bold"
+            >
+              JOIN WAITLIST
+            </button>
+            <button
+              className="mt-6 bg-transparent text-[#1E5128] py-6 text-lg rounded-lg 
+            w-1/2 font-bold border-2 border-[#D8E9A8] hover:bg-[#d8e9a869]"
+            >
+              ECO-PAPER
+            </button>
           </div>
         </div>
       </main>
