@@ -10,7 +10,43 @@ const Home: NextPage = () => {
     <div className="w-full h-screen">
       <Head>
         <title>Ecoland</title>
+        <meta property="og:title" content="Ecoland" />
+
+        <meta
+          property="og:description"
+          content="Ecoland is a universe with a unique Play and Earn economy. Players will be able to enjoy a variety of gameplay genres and also social, educational, and environmental activities. We combine virtual and real events to create an amazing user experience."
+        />
+        <meta property="og:url" content="https://ecoland.world/"></meta>
+        <meta
+          name="description"
+          content="Ecoland is a universe with a unique Play and Earn economy. Players will be able to enjoy a variety of gameplay genres and also social, educational, and environmental activities. We combine virtual and real events to create an amazing user experience."
+        />
+        <meta name="twitter:site" content="@EcoLandWorld"></meta>
+        <meta property="og:image" content="/images/ecoland-thumb.png" />
+
+        <meta name="twitter:title" content="Ecoland" />
+        <meta
+          name="twitter:description"
+          content="Ecoland is a universe with a unique Play and Earn economy. Players will be able to enjoy a variety of gameplay genres and also social, educational, and environmental activities. We combine virtual and real events to create an amazing user experience."
+        />
+        <meta
+          name="twitter:image"
+          content=" https://ecoland.world/images/thumbnail.png"
+        />
+        <meta name="twitter:card" content="summary_large_image"></meta>
+
+        {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff"></meta>
       </Head>
       <Image
         src={bg}
