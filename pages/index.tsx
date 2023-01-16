@@ -3,22 +3,38 @@ import Head from "next/head";
 import Image from "next/image";
 import Header from "../components/Header";
 import hero from "../assets/images/hero.png";
+import bg from "../public/images/mood-bg1.png";
 
 const Home: NextPage = () => {
   return (
-    <div className="w-full h-screen bg-[url('/images/mood-bg1.png')] bg-cover bg-no-repeat">
+    <div className="w-full h-screen">
       <Head>
         <title>Ecoland</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Image
+        src={bg}
+        alt="background"
+        className="absolute -z-10"
+        fill
+        objectFit="cover"
+      />
+
       <Header />
 
       <main className="flex w-full h-screen flex-1 flex-col items-center px-6 justify-center lg:flex-row-reverse lg:justify-around">
         {/* Hero Image */}
-        <img
+        {/* <img
           src="/images/hero.png"
           alt="hero"
           className="animate-updown w-[300px] sm:w-[400px] md:w-[450px] lg:w-[500px]"
+        /> */}
+
+        <Image
+          src={hero}
+          alt="hero"
+          width={300}
+          className="animate-updown sm:w-[400px] md:w-[450px] lg:w-[500px]"
         />
 
         {/* Hero Text */}

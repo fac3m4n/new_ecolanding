@@ -1,24 +1,17 @@
 import React from "react";
 import Image from "next/image";
 import logo from "../public/images/logo.png";
-import { SiDiscord, SiTwitter } from "react-icons/si";
-import { FaTelegramPlane } from "react-icons/fa";
+import twitter from "../public/images/twitter-240.png";
+import telegram from "../public/images/discord-240.png";
+import disord from "../public/images/telegram-240.png";
 const Header = () => {
   return (
     <div className="w-full flex justify-between p-6 items-center absolute z-10">
-      <img src="/images/logo.png" alt="logo" className="w-[120px]" />
-      {/* <Image src={logo} alt="logo" width={120} /> */}
+      <Image src={logo} alt="logo" width={120} />
       <div className="flex space-x-5">
-        <img src="/images/twitter-240.png" alt="twitter" className="w-[32px]" />
-        <img src="/images/discord-240.png" alt="discord" className="w-[32px]" />
-        <img
-          src="/images/telegram-240.png"
-          alt="telegram"
-          className="w-[32px]"
-        />
-        {/* <SiTwitter size={24} color="white" className="md:text-lg" />
-        <SiDiscord size={24} color="white" />
-        <FaTelegramPlane size={24} color="white" /> */}
+        <Image src={twitter} alt="twitter" width={32} />
+        <Image src={telegram} alt="twitter" width={32} />
+        <Image src={disord} alt="twitter" width={32} />
       </div>
     </div>
   );
