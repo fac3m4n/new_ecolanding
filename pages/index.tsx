@@ -38,7 +38,7 @@ const Home: NextPage = () => {
         />
 
         {/* Hero Text */}
-        <div className="justify-center flex flex-col p-4">
+        <div className="justify-center flex flex-col p-6">
           <h1 className="text-[40px] text-[#247c1e] leading-none font-sans font-bold lg:text-[70px]">
             Go Green <br />
             while Gaming
@@ -49,14 +49,14 @@ const Home: NextPage = () => {
 
           <div className="flex justify-center space-x-4">
             <button
-              className="mt-6 bg-[#247c1e] text-white py-6 text-lg rounded-lg 
-            w-1/2 font-bold"
+              className="mt-6 bg-[#247c1e] font-sans text-white py-6 text-lg rounded-lg 
+            w-1/2 font-bold hover:bg-[#1b5c16]"
             >
               JOIN WAITLIST
             </button>
             <button
               className="mt-6 bg-transparent text-[#247c1e] py-6 text-lg rounded-lg 
-            w-1/2 font-bold border-2 border-[#247c1e] hover:bg-[#d8e9a869]"
+            w-1/2 font-bold border-2 border-[#247c1e] hover:bg-[#d8e9a869] font-sans"
             >
               ECO-PAPER
             </button>
