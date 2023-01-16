@@ -56,18 +56,13 @@ const Home: NextPage = () => {
         alt="background"
         className="absolute -z-10"
         fill
-        objectFit="cover"
+        style={{ objectFit: "cover" }}
       />
 
       <Header />
 
       <main className="flex w-full h-screen flex-1 flex-col items-center px-6 justify-center lg:flex-row-reverse lg:justify-around">
         {/* Hero Image */}
-        {/* <img
-          src="/images/hero.png"
-          alt="hero"
-          className="animate-updown w-[300px] sm:w-[400px] md:w-[450px] lg:w-[500px]"
-        /> */}
 
         <Image
           src={hero}
