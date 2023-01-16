@@ -6,6 +6,9 @@ import hero from "../assets/images/hero.png";
 import bg from "../public/images/mood-bg1.png";
 
 const Home: NextPage = () => {
+  const openInNewTab = (url: string | URL | undefined) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
   return (
     <div className="w-full h-screen">
       <Head>
@@ -87,12 +90,22 @@ const Home: NextPage = () => {
             <button
               className="mt-6 bg-[#247c1e] font-sans text-white py-6 text-lg rounded-lg 
             w-1/2 font-bold hover:bg-[#1b5c16]"
+              onClick={() =>
+                openInNewTab(
+                  "https://docs.google.com/forms/d/e/1FAIpQLSdwMAC7f8aS6JyOC8vPQtI8SDaPgQhOBE-Iyhjj8H3bvhuQkQ/viewform"
+                )
+              }
             >
               JOIN WAITLIST
             </button>
             <button
               className="mt-6 bg-transparent text-[#247c1e] py-6 text-lg rounded-lg 
             w-1/2 font-bold border-2 border-[#247c1e] hover:bg-[#d8e9a869] font-sans"
+              onClick={() =>
+                openInNewTab(
+                  "https://ecolandworld.gitbook.io/ecoland.world-whitepaper/"
+                )
+              }
             >
               ECO-PAPER
             </button>
