@@ -68,7 +68,7 @@ const Home: NextPage = () => {
           src={hero}
           alt="hero"
           width={300}
-          className="animate-updown sm:w-[400px] md:w-[450px] lg:w-[500px]"
+          className="animate-updown sm:w-[400px] md:w-[450px] lg:w-[500px] xl:w-[600px] 2xl:w-[700px]"
         />
 
         {/* Hero Text */}
@@ -96,11 +96,7 @@ const Home: NextPage = () => {
             <button
               className="mt-6 bg-transparent text-[#247c1e] py-6 text-lg rounded-lg 
             w-1/2 font-bold border-2 border-[#247c1e] hover:bg-[#d8e9a869] font-sans"
-              onClick={() =>
-                openInNewTab(
-                  "https://ecolandworld.gitbook.io/ecoland.world-whitepaper/"
-                )
-              }
+              onClick={() => openInNewTab("https://ecopaper.ecoland.world")}
             >
               ECO-PAPER
             </button>
