@@ -17,12 +17,12 @@ const Home: NextPage = () => {
 
         <meta
           property="og:description"
-          content="Ecoland is a universe with a unique Play and Earn economy. Players will be able to enjoy a variety of gameplay genres and also social, educational, and environmental activities. We combine virtual and real events to create an amazing user experience."
+          content="Ecoland is a vibrant, immersive universe serving as a hub for an array of unique gaming experiences. At its core, EcoLand is designed to seamlessly combine the conventional gaming world with the innovative blockchain technology, providing players a rich, freemium gaming experience coupled with the potential to own and trade NFTs and tokens."
         />
         <meta property="og:url" content="https://ecoland.world/"></meta>
         <meta
           name="description"
-          content="Ecoland is a universe with a unique Play and Earn economy. Players will be able to enjoy a variety of gameplay genres and also social, educational, and environmental activities. We combine virtual and real events to create an amazing user experience."
+          content="Ecoland is a vibrant, immersive universe serving as a hub for an array of unique gaming experiences. At its core, EcoLand is designed to seamlessly combine the conventional gaming world with the innovative blockchain technology, providing players a rich, freemium gaming experience coupled with the potential to own and trade NFTs and tokens."
         />
         <meta name="twitter:site" content="@EcoLandWorld"></meta>
         <meta property="og:image" content="/images/ecoland-thumb.png" />
@@ -30,7 +30,7 @@ const Home: NextPage = () => {
         <meta name="twitter:title" content="Ecoland" />
         <meta
           name="twitter:description"
-          content="Ecoland is a universe with a unique Play and Earn economy. Players will be able to enjoy a variety of gameplay genres and also social, educational, and environmental activities. We combine virtual and real events to create an amazing user experience."
+          content="Ecoland is a vibrant, immersive universe serving as a hub for an array of unique gaming experiences. At its core, EcoLand is designed to seamlessly combine the conventional gaming world with the innovative blockchain technology, providing players a rich, freemium gaming experience coupled with the potential to own and trade NFTs and tokens."
         />
         <meta
           name="twitter:image"
